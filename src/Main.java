@@ -1,7 +1,9 @@
 import products.ListProducts;
 import products.Product;
+import products.Recipe;
 
 
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -18,8 +20,21 @@ public class Main {
         Product meat = new Product("Мясо", 480, 1);
 
 
+        Set<Product> productSet = new HashSet<>();
+        ListProducts listProducts = new ListProducts();
+        listProducts.add(apple);
+        listProducts.add(cheese);
+        listProducts.add(apple);
+        listProducts.remove(apple);
+        System.out.println();
 
-       Set<Product> products = new HashSet<>();
+        for (Product listProducts1 : productSet) {
+            printInfo(listProducts1);
+        }
+
+
+/*
+        Set<Product> products = new HashSet<>();
 
         products.add(apple);
         products.add(orange);
@@ -32,7 +47,11 @@ public class Main {
         for (Product product1 : products) {
             printInfo(product1);
         }
+        Set<Recipe> recipes = new HashSet<>();
 
+
+
+ */
 
     }
 

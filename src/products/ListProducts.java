@@ -5,10 +5,11 @@ import java.util.Set;
 
 public class ListProducts {
 
-    public Set<Product> products = new HashSet<Product>();
+    private Set<Product> products = new HashSet<>();
 
-
-
+//    public ListProducts(Set<Product> products) {
+//        this.products = products;
+//    }
 
     public void add(Product product) {
         if (products.contains(product)) {
