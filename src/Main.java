@@ -35,7 +35,7 @@ public class Main {
         for (Product listProduct : productSet) {
             printInfo(listProduct);
         }
-        Recipe 1 = new Recipe("Мясной", listProducts(), 4500);
+        //Recipe 1 = new Recipe("Мясной", listProducts(), 4500);
 
 
         Set<Recipe> recipes = new HashSet<>();
