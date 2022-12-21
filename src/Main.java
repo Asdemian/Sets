@@ -1,4 +1,5 @@
 import products.ListProducts;
+import products.ListRecipe;
 import products.Product;
 import products.Recipe;
 
@@ -21,40 +22,26 @@ public class Main {
 
 
         Set<Product> productSet = new HashSet<>();
-        ListProducts listProducts = new ListProducts();
+        ListProducts listProducts = new ListProducts(productSet);
         listProducts.add(apple);
         listProducts.add(cheese);
-        listProducts.add(apple);
-        listProducts.remove(apple);
-        System.out.println();
+        listProducts.add(banana);
+        listProducts.add(sausage);
+        listProducts.add(fish);
+        listProducts.add(meat);
 
-        for (Product listProducts1 : productSet) {
-            printInfo(listProducts1);
+
+
+        for (Product listProduct : productSet) {
+            printInfo(listProduct);
         }
+        Recipe 1 = new Recipe("Мясной", listProducts(), 4500);
 
 
-/*
-        Set<Product> products = new HashSet<>();
-
-        products.add(apple);
-        products.add(orange);
-        products.add(banana);
-        products.add(cheese);
-        products.add(sausage);
-        products.add(fish);
-        products.add(meat);
-
-        for (Product product1 : products) {
-            printInfo(product1);
-        }
         Set<Recipe> recipes = new HashSet<>();
-
-
-
- */
+        ListRecipe listRecipe = new ListRecipe(recipes);
 
     }
-
 
     private static void printInfo(Product product) {
         System.out.println(product);
