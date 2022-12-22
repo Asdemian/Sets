@@ -27,11 +27,17 @@ public class Recipe {
 
 
     public int getTotalCost() {
-
         return totalCost;
     }
 
-
+    @Override
+    public String toString() {
+        return "Рецепт " +
+                " наименование: (" + name + ')' +
+                "   " + listProducts +
+                "  стоимость (" + totalCost +
+                " руб.)";
+    }
 
     @Override
     public boolean equals(Object o) {

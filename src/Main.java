@@ -29,23 +29,28 @@ public class Main {
         listProducts.add(sausage);
         listProducts.add(fish);
         listProducts.add(meat);
-
-
+        listProducts.add(orange);
 
         for (Product listProduct : productSet) {
             printInfo(listProduct);
         }
-        //Recipe 1 = new Recipe("Мясной", listProducts(), 4500);
 
+        Recipe all = new Recipe("Чудный", listProducts, 2255);
+        Recipe all2 = new Recipe("Чудный", listProducts, 2255);
 
         Set<Recipe> recipes = new HashSet<>();
         ListRecipe listRecipe = new ListRecipe(recipes);
+        listRecipe.add(all);
+        listRecipe.add(all2);
+
+
+        System.out.println(Arrays.toString(listRecipe.getRecipes().toArray()));
 
     }
-
     private static void printInfo(Product product) {
         System.out.println(product);
     }
+
 }
 
 

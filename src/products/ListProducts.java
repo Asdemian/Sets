@@ -19,6 +19,8 @@ public class ListProducts {
 
     }
 
+
+
     public void remove(Product product) {
         if (!products.remove(product)) {
             throw new IllegalArgumentException("Такого продукта нет");
@@ -26,7 +28,12 @@ public class ListProducts {
 
 
     }
-
+    @Override
+    public String toString() {
+        return " " +
+                " Продукты = " + products +
+                ' ';
+    }
 
 }
 
